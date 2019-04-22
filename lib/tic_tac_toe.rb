@@ -106,6 +106,8 @@ def play(board)
 
   if won?(board)
     combo = won?(board)
+    idx = combo[0]
+    winner = board[idx]
     puts "Congratulations #{winner}!"
   else
     puts "Cat's Game!"
