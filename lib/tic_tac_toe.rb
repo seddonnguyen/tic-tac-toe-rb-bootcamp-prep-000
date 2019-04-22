@@ -103,7 +103,6 @@ def play(board)
     turn(board)
   end
 
-
   if won?(board)
     combo = won?(board)
     idx = combo[0]
