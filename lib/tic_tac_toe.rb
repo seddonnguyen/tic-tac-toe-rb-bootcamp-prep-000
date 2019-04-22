@@ -65,6 +65,7 @@ def current_player(board)
   end
 end
 
+
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
     pos_1 = board[combo[0]]
@@ -102,7 +103,9 @@ def play(board)
     turn(board)
   end
 
-  if won?(board)
+  winner = won?(board)
+  if winner
+    player = board[winner[0]]
     puts "Congratulations #{player}!"
   else
     puts "Cat's Game!"
