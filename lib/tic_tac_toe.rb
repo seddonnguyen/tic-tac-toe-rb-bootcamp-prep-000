@@ -105,7 +105,6 @@ def play(board)
   end
 
   if won?(board)
-    player = current_player
     puts "Congratulations #{player}!"
   else
     puts "Cat's Game!"
