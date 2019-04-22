@@ -98,7 +98,6 @@ def winner(board)
 end
 
 def play(board)
-  player = ""
   until over?(board)
     player = current_player(board)
     turn(board)
